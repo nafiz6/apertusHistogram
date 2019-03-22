@@ -111,98 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named Histogram
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 untitled
-.PHONY : untitled
+Histogram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Histogram
+.PHONY : Histogram
 
 # fast build rule for target.
-untitled/fast:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-.PHONY : untitled/fast
+Histogram/fast:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/build
+.PHONY : Histogram/fast
 
-Read.o: Read.c.o
+Histogram.o: Histogram.c.o
 
-.PHONY : Read.o
-
-# target to build an object file
-Read.c.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Read.c.o
-.PHONY : Read.c.o
-
-Read.i: Read.c.i
-
-.PHONY : Read.i
-
-# target to preprocess a source file
-Read.c.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Read.c.i
-.PHONY : Read.c.i
-
-Read.s: Read.c.s
-
-.PHONY : Read.s
-
-# target to generate assembly for a file
-Read.c.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Read.c.s
-.PHONY : Read.c.s
-
-Unoptimized.o: Unoptimized.c.o
-
-.PHONY : Unoptimized.o
+.PHONY : Histogram.o
 
 # target to build an object file
-Unoptimized.c.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Unoptimized.c.o
-.PHONY : Unoptimized.c.o
+Histogram.c.o:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/Histogram.c.o
+.PHONY : Histogram.c.o
 
-Unoptimized.i: Unoptimized.c.i
+Histogram.i: Histogram.c.i
 
-.PHONY : Unoptimized.i
-
-# target to preprocess a source file
-Unoptimized.c.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Unoptimized.c.i
-.PHONY : Unoptimized.c.i
-
-Unoptimized.s: Unoptimized.c.s
-
-.PHONY : Unoptimized.s
-
-# target to generate assembly for a file
-Unoptimized.c.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Unoptimized.c.s
-.PHONY : Unoptimized.c.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
+.PHONY : Histogram.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.i
-.PHONY : main.cpp.i
+Histogram.c.i:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/Histogram.c.i
+.PHONY : Histogram.c.i
 
-main.s: main.cpp.s
+Histogram.s: Histogram.c.s
 
-.PHONY : main.s
+.PHONY : Histogram.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.s
-.PHONY : main.cpp.s
+Histogram.c.s:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/Histogram.c.s
+.PHONY : Histogram.c.s
 
 # Help Target
 help:
@@ -211,17 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... untitled"
+	@echo "... Histogram"
 	@echo "... edit_cache"
-	@echo "... Read.o"
-	@echo "... Read.i"
-	@echo "... Read.s"
-	@echo "... Unoptimized.o"
-	@echo "... Unoptimized.i"
-	@echo "... Unoptimized.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Histogram.o"
+	@echo "... Histogram.i"
+	@echo "... Histogram.s"
 .PHONY : help
 
 
