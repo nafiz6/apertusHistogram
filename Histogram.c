@@ -13,11 +13,11 @@ static uint32_t img_size = 0x1200000;  //Assuming file size is exactly (12 x 409
 static int16_t bins = 32;
 
 
-int main() {
+int main(int argc, char *argv[]) {
 
     clock_t start = clock();
 
-    int fd = open("img.raw12", O_RDONLY, S_IRUSR | S_IWUSR);
+    int fd = open(argv[1], O_RDONLY, S_IRUSR | S_IWUSR);
 
     int32_t *file_in_memory = mmap(NULL, img_size, PROT_READ, MAP_PRIVATE, fd, 0);
 
