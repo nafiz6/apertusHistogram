@@ -13,8 +13,6 @@ static uint32_t img_size = 0x1200000;  //Assuming file size is exactly (12 x 409
 static int16_t bins = 32;
 
 
-
-
 int main() {
 
     clock_t start = clock();
@@ -39,7 +37,7 @@ int main() {
 
 
             //RED
-            histogram[0][((((byte1 << 4) & 0xFF0) |  ((byte1 >> 12)  & 0xF)) /128)]++;
+            histogram[0][((((byte1 << 4) & 0xFF0) | ((byte1>>12)& 0xF)) /128)]++;
             histogram[0][((((byte1 >>20) & 0xFF0) | ((byte2>>4) & 0xF)) /128)]++;
             histogram[0][((((byte2 >> 12)& 0xFF0) | ((byte2>>28)& 0xF)) /128)]++;
             histogram[0][((((byte3 >> 4) & 0xFF0) | ((byte3>>20)& 0xF)) /128)]++;
@@ -59,7 +57,7 @@ int main() {
 
 
             //GREEN 2
-            histogram[2][((((byte1 << 4) & 0xFF0) |  ((byte1 >> 12)  & 0xF)) /128)]++;
+            histogram[2][((((byte1 << 4) & 0xFF0) | ((byte1>>12)  & 0xF)) /128)]++;
             histogram[2][((((byte1 >>20) & 0xFF0) | ((byte2>>4) & 0xF)) /128)]++;
             histogram[2][((((byte2 >> 12)& 0xFF0) | ((byte2>>28)& 0xF)) /128)]++;
             histogram[2][((((byte3 >> 4) & 0xFF0) | ((byte3>>20)& 0xF)) /128)]++;

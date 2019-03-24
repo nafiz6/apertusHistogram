@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/untitled.dir/main.cpp.o CMakeFiles/untitled.dir/Read.c.o CMakeFiles/untitled.dir/Unoptimized.c.o  -o untitled 

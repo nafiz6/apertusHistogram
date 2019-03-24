@@ -1,3 +1,0 @@
-/media/nafiz/New Volume/Work/GSoC/apertus/histogram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/nafiz/New Volume/Work/GSoC/apertus/histogram/cmake-build-debug/CMakeFiles/Histogram.dir
-/media/nafiz/New Volume/Work/GSoC/apertus/histogram/cmake-build-debug/CMakeFiles/edit_cache.dir

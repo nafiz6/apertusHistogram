@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/Histogram.dir/Histogram.c.o  -o Histogram 
